@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matching Game</title>
+	<script type="text/javascript" src="hwC.js"></script>
+	<style type="text/css">
+	#whole{
+
+		height:555px;
+		width:550px;
+		padding: 25px;
+		margin:0px auto;
+		background-color: gray;
+
+	}
+	#whole > div {
+		background:url(http://www.grayflannelsuit.net/blog/wp-content/uploads/2012/03/atlanta-braves-cap-logo_2003-present.gif) no-repeat ;
+		background-size: 100% 100%;
+		border: 1px solid black;
+		width:71px;
+		height:71px;
+		float:left;
+		margin: 10px;
+		padding:20px;
+		text-align: center;
+		font-size : 50px;
+		
+	}
+	
+
+
+	</style>
+</head>
+<body>
+<h1>Matching Game</h1>
+<p>Please enter the number of seconds you need to memorize the board (3, 5 or 8 seconds):<input type="text" id="seconds" name="seconds"></p>
+<p>Press Start button to flip the cards for the designated time.</p>
+<p>You will have the designated time to memorize where the cards are.</p>
+<p>Once the cards flip back over, you must match up the pairs by clicking the tile.</p>
+
+<button id="start" onclick="flip()">START</button>
+<div id="whole">
+<script type="text/javascript">board();</script>
+
+</div>
+
+
+
+</body>
+</html>

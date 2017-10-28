@@ -1,1 +1,1 @@
-# JS_stuff
+# Just some JS projects that I did for web programming.

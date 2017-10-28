@@ -1,0 +1,75 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Puzzle 15</title>
+	
+	<style type="text/css">
+	
+
+#top{
+text-align: center;
+}
+#tiles{
+	text-align: center;
+}
+#blank{
+	background-color: black;
+}
+#button{
+    text-align: center;
+   }
+   #shuffle{
+    background-color: green;
+    font-size: 32px;
+    margin-top: 20px;
+   }
+   #field1{
+    text-align: center
+}
+#squares{
+	text-align: center;
+}
+	#shuffle2{
+    background-color: green;
+    font-size: 20px;
+    margin-left: 4px
+   }
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+<div id="top">
+<h1>15 Puzzle Game</h1>
+<h4>by James Posey</h4>
+</div>
+<div id="squares">
+<p>***Extra Functions***</p>
+<p>1. Timer</p>
+<p>2. Move Count</p>
+<p>3. Alert when you when.</p>
+<p>4. Change the number of tiles</p>
+
+<h3>Number of Moves:</h3>
+<p id="mov">0</p>
+</div>
+
+<br>
+<script type="text/javascript" src="puz.js"></script>
+
+<div id="button">
+    <button id="shuffle" onclick="shuffle()">Shuffle</button>
+</div>
+<div id="field1">
+    <p>Please enter the number of seconds you think you need to solve the puzzle:<input type="text" id="secs"></p> 
+    <button id="shuffle" onclick="setTimeout(func, time())">Start Time</button>
+
+</div>
+
+</body>
+</html>
